@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ffee00aa11bb22cc33dd44ee55ff01, type: 3}
+  m_Name: YahtzeeConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Yahtzee.Core.YahtzeeConfig
+  gameName: YADZY
+  useProductionInEditor: 1
+  apiBaseUrl: https://yahtzee.local/
+  guestLoginPath: /api/auth/guest
+  profilePath: /api/profile
+  quickMatchPath: /api/matchmaking/queue
+  rankedMatchPath: /api/matchmaking/ranked
+  tournamentJoinPath: /api/tournament/join
+  tournamentLeavePath: /api/tournament/leave
+  mmrLeaderboardPath: /api/leaderboard/mmr
+  tournamentLeaderboardPath: /api/leaderboard/tournament
+  matchActionPath: /api/matches
+  broadcastAuthPath: /broadcasting/auth
+  crashReportPath: /api/crash-reports
+  tokenPrefKey: yahtzee.sanctum.token
+  httpTimeoutSeconds: 20
+  reverbHost: yahtzee.local
+  reverbPort: 8080
+  reverbAppKey: VKnSMhcU0u0H7QvZUQdCrmL9jWKXh0SE
+  reverbUseTls: 0
+  socketTimeoutSeconds: 10
+  pingIntervalSeconds: 30
+  minPingIntervalSeconds: 15
+  reconnectStartDelaySeconds: 1
+  reconnectMaxDelaySeconds: 30
+  productionApiBaseUrl: https://yahtzee.tiles-play.com/
+  productionReverbHost: yahtzee.tiles-play.com
+  productionReverbPort: 8090
+  productionReverbAppKey: VKnSMhcU0u0H7QvZUQdCrmL9jWKXh0SE
+  productionReverbUseTls: 0
+  productionPrivacyPolicyUrl: https://yahtzee.tiles-play.com/privacy.html
+  productionTermsOfServiceUrl: https://yahtzee.tiles-play.com/terms.html
+  matchmakingPollSeconds: 2
+  localTablePort: 40777
+  privacyPolicyUrl: https://yahtzee.local/privacy.html
+  termsOfServiceUrl: https://yahtzee.local/terms.html
+  diceCount: 5
+  rollsPerTurn: 3
+  upperBonusThreshold: 63
+  upperBonusValue: 35
+  fullHouseScore: 25
+  smallStraightScore: 30
+  largeStraightScore: 40
+  yahtzeeScore: 50
+  diceScale: 0.3
+  throwForce: 5.4
+  torqueForce: 3.4
+  throwForward: 1.5
+  restTimeoutSeconds: 8
+  restSpeedSqr: 0.01
+  bounciness: 0.14
+  friction: 0.9

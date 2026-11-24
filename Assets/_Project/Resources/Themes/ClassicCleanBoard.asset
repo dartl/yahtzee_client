@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c2e91f8a7d4e6a9f1c3d5e7a8b0c2d, type: 3}
+  m_Name: ClassicCleanBoard
+  m_EditorClassIdentifier: Assembly-CSharp::Yahtzee.Core.BoardSkinConfig
+  skinId: classic-clean
+  skinName: Classic Clean
+  diceSlug: classic-dice
+  tableSlug: classic-felt
+  floorColor: {r: 0.9725491, g: 0.9803922, b: 0.9882354, a: 1}
+  wallColor: {r: 0.2039216, g: 0.2509804, b: 0.3294118, a: 1}
+  rimColor: {r: 0.1176471, g: 0.1617647, b: 0.2313726, a: 1}
+  floorSmoothness: 0.08
+  wallSmoothness: 0.12
+  rimSmoothness: 0.12
+  rimEmission: 0
+  tableFelt: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  tableRails: {r: 0.1176471, g: 0.1617647, b: 0.2313726, a: 1}
+  goldCorners: 0
+  diceBody: {r: 0.9803922, g: 0.9803922, b: 0.9803922, a: 1}
+  dicePips: {r: 0.1176471, g: 0.1372549, b: 0.1647059, a: 1}
+  dicePipAce: {r: 0.86, g: 0.22, b: 0.22, a: 1}
+  diceSmoothness: 0.55
+  redAcePip: 1
+  cameraBackground: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  ambientLight: {r: 0.72, g: 0.76, b: 0.84, a: 1}
+  keyLightColor: {r: 1, g: 0.98, b: 0.95, a: 1}
+  keyLightIntensity: 1.2
+  fillLightColor: {r: 0.85, g: 0.9, b: 0.98, a: 1}
+  fillLightIntensity: 0.4
+  enableBloom: 0

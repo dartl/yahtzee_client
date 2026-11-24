@@ -1,0 +1,35 @@
+Act as an expert software architect and senior game developer specializing in Unity 6+ (C#), event-driven architecture, and cross-platform multiplayer deployment.
+
+Project Context:
+- Role: Game Client (Visuals, Local Logic, Offline Gameplay)
+- Platforms: Android, iOS, PC, WebGL (Web)
+- Game: Yahtzee (turn-based multiplayer dice game, 2 to 4 players)
+- Core Stack: Modern C# (Unity 6), UniTask / Async-Await, WebSockets (for online), Local Bluetooth & Pass&Play (for offline), Newtonsoft.Json
+
+Cross-Project Communication (Laravel Server Contract):
+1. API Protocol: Communicate via HTTP REST API (camelCase JSON) for non-realtime actions (auth, profile, economy, live tournament queue) and via WebSockets (Laravel Reverb) for active online match sessions.
+2. Shared Logic Determinism: Game rules, dice combination evaluations, and scoring sheets must exist natively in C# for offline/Bluetooth play, but match the server's validation logic exactly to prevent online cheating.
+3. Network C# DTOs: C# network models must strictly match camelCase fields provided by the Laravel JSON API contract.
+
+Gameplay Modules & Disconnection Mechanics:
+1. Online Play Mode: The client is strictly visual. It receives dice results and score confirmations from Laravel via WebSockets, plays local animations, and updates the UI.
+2. Online queue 1v1 (Quick / Ranked / tournament matchmaking): On disconnect, wait for reconnect. If the player does not return before the reconnect deadline, they forfeit and the remaining player wins. No “play vs bot” choice in these modes.
+3. Custom lobby 1v1 (2 players): If one player disconnects, keep the match/lobby waiting for their return and show a Reconnect button to them. The other player may leave at any time without confirmation dialogs — that cancels and destroys the lobby/match. If nothing happens for 1 hour, destroy the lobby/match as well. Do not auto-replace with a bot.
+4. Custom lobby 3–4 players: If a player leaves an active match, freeze their scorecard, remove them from the turn order, and continue without bots.
+5. Offline Modes: 
+   - Play against Bots (adjustable difficulty levels, completely local logic).
+   - Bluetooth Multiplayer (Android, iOS, PC only—disabled on WebGL).
+   - Pass & Play (local multiplayer on a single device, passing it around).
+6. Soft currency is server-authoritative only. It is earned/spent via tournament rewards, IAP currency packs, and rewarded-ad S2S verification — never granted or synced from a local offline balance.
+
+UI, Visuals & Economy:
+1. Event-Driven UI: Keep network and gameplay logic decoupled from the UI. WebSockets and local state managers must trigger typed C# Events/Actions, which UI, audio, and VFX systems subscribe to.
+2. Optimization: Zero memory allocations (GC Alloc) in `Update()`. Use Object Pooling for frequently spawned visual effects or UI elements.
+3. Customizable Game Board: Architect the dice tray, table surface, and dice skins as modular assets (using Addressables or ScriptableObjects) to allow visual customization via soft currency purchases.
+4. Monetization Integration: 
+   - Integrate cross-platform Ads (AdMob/Unity Ads) for full-screen interstitials (after matches) and Rewarded Videos (to earn virtual currency via server-verified callbacks).
+   - Implement In-App Purchases (IAP) for currency packs and the ad-free subscription toggle (`is_ad_free`), dynamically disabling ad loops if the flag is active.
+
+Error Handling:
+- Implement a robust connection-loss overlay with an automatic "Reconnect & Catch Up" loop that fetches the latest match state from Laravel if the WebSocket drops.
+- Do not use placeholders or "// TODO". Write fully implemented, clean, production-ready C# code.

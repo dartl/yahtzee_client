@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ab68883ed8047543a88c1ec1f42c642, type: 3}
+  m_Name: ClassicCleanUI
+  m_EditorClassIdentifier: Assembly-CSharp::Yahtzee.Core.UIThemeConfig
+  themeId: classic-clean
+  themeName: Classic Clean
+  backdrop: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  panelBg: {r: 1, g: 1, b: 1, a: 0.98}
+  panelBgSolid: {r: 1, g: 1, b: 1, a: 1}
+  cardBg: {r: 1, g: 1, b: 1, a: 1}
+  borderSubtle: {r: 0.5803922, g: 0.6392157, b: 0.7215686, a: 1}
+  borderStrong: {r: 0.1176471, g: 0.1617647, b: 0.2313726, a: 1}
+  textPrimary: {r: 0.05882353, g: 0.09019608, b: 0.1647059, a: 1}
+  textMuted: {r: 0.3921569, g: 0.454902, b: 0.5450981, a: 1}
+  textAccent: {r: 0.145098, g: 0.3882353, b: 0.9215686, a: 1}
+  textOnAccent: {r: 1, g: 1, b: 1, a: 1}
+  buttonAccent: {r: 0.145098, g: 0.3882353, b: 0.9215686, a: 1}
+  buttonAccentDepth: {r: 0.1137255, g: 0.3058824, b: 0.8470588, a: 1}
+  buttonFill: {r: 1, g: 1, b: 1, a: 1}
+  buttonAccentGlow: {r: 0.145098, g: 0.3882353, b: 0.9215686, a: 0.18}
+  buttonDepthPx: 5
+  buttonSecondaryFace: {r: 1, g: 1, b: 1, a: 1}
+  buttonSecondaryBorder: {r: 0.5803922, g: 0.6392157, b: 0.7215686, a: 1}
+  buttonSecondaryText: {r: 0.05882353, g: 0.09019608, b: 0.1647059, a: 1}
+  buttonDangerFace: {r: 0.9960784, g: 0.8862745, b: 0.8862745, a: 1}
+  buttonDangerBorder: {r: 0.8627451, g: 0.1490196, b: 0.1490196, a: 1}
+  buttonDangerText: {r: 0.8627451, g: 0.1490196, b: 0.1490196, a: 1}
+  rowA: {r: 1, g: 1, b: 1, a: 1}
+  rowB: {r: 0.972549, g: 0.9803922, b: 0.9882353, a: 1}
+  rowHint: {r: 0.8588235, g: 0.9137255, b: 0.9882353, a: 1}
+  rowHintBorder: {r: 0.145098, g: 0.3882353, b: 0.9215686, a: 1}
+  rowCommitted: {r: 0.9411765, g: 0.9529412, b: 0.9647059, a: 0.95}
+  rowSelected: {r: 0.8196079, g: 0.8941177, b: 1, a: 1}
+  scoreCommitted: {r: 0.05882353, g: 0.09019608, b: 0.1647059, a: 1}
+  scoreHint: {r: 0.145098, g: 0.3882353, b: 0.9215686, a: 1}
+  sectionHeaderBg: {r: 0.1176471, g: 0.1617647, b: 0.2313726, a: 1}
+  sectionHeaderText: {r: 1, g: 1, b: 1, a: 1}
+  sectionAltBg: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  sectionAltText: {r: 0.05882353, g: 0.09019608, b: 0.1647059, a: 1}
+  diceBody: {r: 0.9803922, g: 0.9803922, b: 0.9803922, a: 1}
+  dicePip: {r: 0.1176471, g: 0.1372549, b: 0.1647059, a: 1}
+  dicePipAce: {r: 0.86, g: 0.22, b: 0.22, a: 1}

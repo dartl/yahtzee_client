@@ -1,0 +1,52 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Pp]rofilerCaptures/
+.utmp/
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+.cursor/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Packed Addressables / Burst / crash
+**/StreamingAssets/aa.meta
+**/StreamingAssets/aa/*
+!**/StreamingAssets/aa/settings
+*.burstdebuginfo/
+sysinfo.txt
+crashlytics-buildid.txt
+
+# Local env / secrets
+.env
+.env.*
+*.pem
+*.keystore
+*.jks
+*.p12
+google-services.json
+GoogleService-Info.plist
